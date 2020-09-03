@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+/* navigation start */
+.navigation{
+    padding:  1rem  ;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 2rem;
+    z-index: 1;
+    background-color: black;
+    color: white;
+    border-bottom: 1px white solid;
+}
+.navright ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+}
+.navright ul li{
+    margin: 0rem 1rem;
+    padding:  1rem;
+}
+.navright ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navright ul li a:hover {
+    color: red;
+    text-shadow: 1px 1px 1px green;
+}
+.navright ul li .active a{
+   color: red;
+}
+.navlogo {
+    margin-right:40rem ;
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid wheat;
+    border-radius: .5rem;
+}
+/* navigation end */
+section{
+    align-items: center;
+    /* display: flex; */
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+#home{
+    background-image: url("../img/home.jpg"); 
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.homeh1{
+    padding-top: 50rem ;
+    font-size: 4rem;
+    color: tomato;
+    text-shadow: 1px 1px 2px blue;
+}
+.imgromantic{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+.slide{
+    margin: .5rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+.slide img{
+    width: 100%;
+    height: 90%;
+    transition: .5s;
+}
+.slide:hover{
+    flex-basis: 40%;
+}
+.activeimg{
+    flex-basis: 40%;
+}
+.imgromantic:hover .activeimg{
+    flex-basis: 0;
+}
+.slide:nth-child(1):hover{
+    flex-basis: 40%;
+}
+
+.imgonesided{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+.imgonesided:hover .activeimg{
+    flex-basis: 0;
+}
+.imgattitude{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+.imgattitude:hover .activeimg{
+    flex-basis: 0;
+}
+#romantic,  #onesided, #attitude{
+    border: solid black .1rem;
+}
+#romantic h1{
+    font-size: 5rem;
+    text-shadow: 1px 1px 10px hotpink;
+}
+#onesided h1{
+    font-size: 5rem;
+    text-shadow: 1px 2px 2px red;
+}
+#attitude h1{
+    font-size: 5rem;
+    text-shadow: 3px 1px 2px purple;
+}
+.footer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-size: 2rem;
+}
+/* socialmediaicon start */
+.socialicon{
+}
+.fa-facebook{
+    color:blue;
+}
+.fa-instagram{
+    color: orangered;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-github{
+    color: white;
+   
+}
+nav .closemenu {
+    display: none;
+    font-size: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+.openmenu{
+    display: none;
+    font-size: 3rem;
+    margin: 1rem;
+    cursor: pointer; 
+}

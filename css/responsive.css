@@ -1,0 +1,108 @@
+@media only screen and (max-width:980px){
+    .navlogo{
+        margin-right: 5rem;
+    }
+}
+@media only screen and (max-width:840px){
+    html{
+        font-size: 50%;
+    }
+    .slide img{
+        width: 100%;
+        height: 90%;
+        transition: .5s;
+    }
+    .slide:hover{
+        flex-basis: 50%;
+    }
+    .activeimg{
+        flex-basis: 50%;
+    }
+    .slide:nth-child(1):hover{
+        flex-basis: 50%;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .slide img{
+        width: 100%;
+        height: 90%;
+        transition: .5s;
+    }
+    .slide:hover{
+        flex-basis: 60%;
+    }
+    .activeimg{
+        flex-basis: 60%;
+    }
+    .slide:nth-child(1):hover{
+        flex-basis: 60%;
+    }
+    section{
+        height: 90vh;
+    }
+    .slide{
+        margin: .2rem;
+    }
+    .imgromantic ,  .imgonesided, .imgattitude{
+        margin: .2rem;
+    }
+}
+@media only screen and (max-width:500px){
+    .navright{
+        height: 40vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-color: black;
+        transition: top 1s ease;
+        display: none;
+        border-bottom: solid white 2px;
+        border-bottom-left-radius:1rem ;
+        border-bottom-right-radius:1rem ;
+    }
+    .navright .closemenu{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
+    nav .openmenu{
+        display: block;
+    }
+    .navright ul{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:400px){
+    .slide img{
+        width: 100%;
+        height: 90%;
+        transition: .5s;
+    }
+    .slide:hover{
+        flex-basis: 80%;
+    }
+    .activeimg{
+        flex-basis: 80%;
+    }
+    .slide:nth-child(1):hover{
+        flex-basis: 80%;
+    }
+    section{
+        height: 70vh;
+    }
+    #romantic h1{
+        font-size: 4rem;
+    }
+    #onesided h1{
+        font-size: 4rem;
+    }
+    #attitude h1{
+        font-size: 4rem;
+    }
+}
